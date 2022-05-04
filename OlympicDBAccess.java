@@ -80,6 +80,8 @@ public class OlympicDBAccess {
         //this should be the first line in this method.
         long time = System.currentTimeMillis();
         populateOlympics();
+        populateEvents();
+        populateAthletes();
 
         //this should be the last line in this method
         System.out.println("Time to populate: " + (System.currentTimeMillis() - time) + "ms");
