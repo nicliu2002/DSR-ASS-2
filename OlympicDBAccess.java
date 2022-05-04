@@ -162,7 +162,7 @@ public class OlympicDBAccess {
             con = DriverManager.getConnection("jdbc:mysql://seitux2.adfa.unsw.edu.au/z5364371", "z5364371", "TapHolster64");
             String sql = "INSERT INTO ATHLETES (name, noc, gender) VALUES (?, ?, ?)";
             PreparedStatement statement = con.prepareStatement(sql);
-            BufferedReader lineReader = new BufferedReader(new FileReader("events.csv"));
+            BufferedReader lineReader = new BufferedReader(new FileReader("athletes.csv"));
             String lineText = null;
             int count = 0;
             lineReader.readLine(); // skip header line
